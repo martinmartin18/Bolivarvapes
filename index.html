@@ -3,39 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolivar Vapes | Catálogo</title>
-    <style>
-        body { background-color: #0f0f12; color: white; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
-        .logo { width: 120px; border-radius: 50%; border: 2px solid #6c5ce7; box-shadow: 0 0 20px #6c5ce766; }
-        h1 { background: linear-gradient(to right, #00d4ff, #a29bfe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; }
-        .container { max-width: 500px; margin: auto; }
-        .vape-card { 
-            background: #1a1a22; border-radius: 15px; padding: 15px; margin-bottom: 20px; 
-            border: 1px solid #333; transition: 0.3s; cursor: pointer; text-align: left;
-        }
-        .vape-card:hover { border-color: #00d4ff; background: #222; }
-        .vape-img { width: 100%; display: none; border-radius: 10px; margin-bottom: 10px; }
-        .vape-card:hover .vape-img { display: block; } /* Aquí aparece la foto al tocar/pasar mouse */
-        .price { color: #25d366; font-size: 1.5rem; font-weight: bold; }
-        .btn-wa { 
-            display: block; background: #25d366; color: white; text-decoration: none; 
-            padding: 15px; border-radius: 10px; font-weight: bold; margin-top: 20px;
-        }
-    </style>
+    <title>Bolivar Vapes | Catálogo Premium</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" class="logo">
-        <h1>Bolivar Vapes</h1>
-        <p>San Carlos de Bolívar</p>
-
-        <div class="vape-card">
-            <img src="geekbar.jpg" class="vape-img"> <h3>GEEK BAR Z35</h3>
-            <p>35.000 Puffs | Sabores: Grape Ice, Strawberry...</p>
-            <span class="price">$28.000</span>
+        <!-- HEADER -->
+        <div class="header">
+            <img src="images/logo.png" class="logo" alt="Logo Bolivar Vapes">
+            <h1>🌬️ Bolivar Vapes</h1>
+            <p class="subtitle">Catálogo Premium de Vapeadores</p>
+            <p class="contact-info">📍 San Carlos de Bolívar</p>
         </div>
 
-        <a href="https://wa.me/542314483738" class="btn-wa">SOLICITAR ASESORAMIENTO</a>
+        <!-- CTA PRINCIPAL -->
+        <a href="https://wa.me/542314483738?text=Hola%20Bolivar%20Vapes%2C%20quiero%20hacer%20una%20consulta" class="main-cta">
+            💬 SOLICITAR ASESORAMIENTO
+        </a>
+
+        <!-- PRODUCTOS -->
+        <div class="products-section">
+            <h2 class="section-title">Nuestros Productos</h2>
+
+            <!-- PRODUCTO 1 -->
+            <div class="vape-card">
+                <div class="vape-card-header">
+                    <h3>GEEK BAR Z35</h3>
+                    <span class="stock-badge">En Stock</span>
+                </div>
+                <img src="images/geekbar-z35.jpg" class="vape-img" alt="GEEK BAR Z35">
+                <p class="vape-description">Uno de los más vendidos. Sabor intenso y larga duración.</p>
+                <div class="vape-specs">
+                    <strong>35,000 Puffs</strong> | Sabores: Grape Ice, Strawberry, Mango
+                </div>
+                <div class="price">$28.000</div>
+                <a href="https://wa.me/542314483738?text=Me%20interesa%20el%20GEEK%20BAR%20Z35" class="btn-wa">
+                    Consultar Disponibilidad
+                </a>
+            </div>
+
+            <!-- PRODUCTO 2 -->
+            <div class="vape-card">
+                <div class="vape-card-header">
+                    <h3>GEEK BAR B5000</h3>
+                    <span class="stock-badge">En Stock</span>
+                </div>
+                <img src="images/geekbar-b5000.jpg" class="vape-img" alt="GEEK BAR B5000">
+                <p class="vape-description">Tamaño compacto, perfecta duración para uso diario.</p>
+                <div class="vape-specs">
+                    <strong>5,000 Puffs</strong> | Sabores: Blue Razz, Peach, Watermelon
+                </div>
+                <div class="price">$12.500</div>
+                <a href="https://wa.me/542314483738?text=Me%20interesa%20el%20GEEK%20BAR%20B5000" class="btn-wa">
+                    Consultar Disponibilidad
+                </a>
+            </div>
+
+            <!-- PRODUCTO 3 -->
+            <div class="vape-card">
+                <div class="vape-card-header">
+                    <h3>LOST MARY OS5000</h3>
+                    <span class="stock-badge limited">Stock Limitado</span>
+                </div>
+                <img src="images/lost-mary.jpg" class="vape-img" alt="LOST MARY OS5000">
+                <p class="vape-description">Premium quality con increíble variedad de sabores.</p>
+                <div class="vape-specs">
+                    <strong>5,000 Puffs</strong> | Sabores: Blueberry Ice, Cherry, Tropical
+                </div>
+                <div class="price">$15.000</div>
+                <a href="https://wa.me/542314483738?text=Me%20interesa%20el%20LOST%20MARY%20OS5000" class="btn-wa">
+                    Consultar Disponibilidad
+                </a>
+            </div>
+
+            <!-- PRODUCTO 4 -->
+            <div class="vape-card">
+                <div class="vape-card-header">
+                    <h3>VUSE ePEN</h3>
+                    <span class="stock-badge">En Stock</span>
+                </div>
+                <img src="images/vuse-epen.jpg" class="vape-img" alt="VUSE ePEN">
+                <p class="vape-description">Dispositivo recargable de última tecnología.</p>
+                <div class="vape-specs">
+                    <strong>800 Puffs</strong> | Sabores: Mint, Tobacco, Fruity Mix
+                </div>
+                <div class="price">$18.000</div>
+                <a href="https://wa.me/542314483738?text=Me%20interesa%20el%20VUSE%20ePEN" class="btn-wa">
+                    Consultar Disponibilidad
+                </a>
+            </div>
+
+            <!-- PRODUCTO 5 -->
+            <div class="vape-card">
+                <div class="vape-card-header">
+                    <h3>FRIOBAR</h3>
+                    <span class="stock-badge">En Stock</span>
+                </div>
+                <img src="images/friobar.jpg" class="vape-img" alt="FRIOBAR">
+                <p class="vape-description">Sensación fría y refrescante en cada inhalación.</p>
+                <div class="vape-specs">
+                    <strong>6,000 Puffs</strong> | Sabores: Menthol, Ice Cream, Cooling Fruits
+                </div>
+                <div class="price">$14.500</div>
+                <a href="https://wa.me/542314483738?text=Me%20interesa%20el%20FRIOBAR" class="btn-wa">
+                    Consultar Disponibilidad
+                </a>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>📱 Contacto Principal:</strong> <a href="https://wa.me/542314483738">+54 2314483738</a></p>
+            <p><strong>📍 Ubicación:</strong> San Carlos de Bolívar</p>
+            <p style="margin-top: 15px; color: #555; font-size: 0.8rem;">
+                © 2026 Bolivar Vapes. Todos los derechos reservados.
+            </p>
+        </footer>
     </div>
 </body>
 </html>
